@@ -1,0 +1,12 @@
+[package]
+name = "rust-redis"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.54"
+axum = "0.4.5"
+redis = { version = "0.21.5", features = ["tokio-comp", "tokio-native-tls-comp"]}
+tokio = { version = "1.17.0", features = [ "full" ] }
